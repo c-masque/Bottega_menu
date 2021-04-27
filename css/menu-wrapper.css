@@ -1,0 +1,89 @@
+.content-wrapper {
+    width: 100vw;
+    height: 1000px;
+    background-color: #332f2f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content-wrapper .menu-wrapper {
+    width: 60%;
+    height: 100%;
+    background-color: #e2dcd5;
+    display: flex;
+    font-size: 2em;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.content-wrapper .menu-wrapper .menu-header {
+    font-weight: bolder;
+    border-bottom: 5px solid #c3603a;
+    padding: 10px 50px;
+    margin: 20px;
+    background: #eabc76;
+    display: flex;
+    align-items: center;
+}
+
+.content-wrapper .menu-wrapper .menu-columns {
+    display: flex;
+    place-content: center;
+    gap: 100px;
+    max-width: 80%;
+}
+
+.content-wrapper .menu-wrapper .menu-columns .main-items-menu-wrapper {
+    flex-basis: 2;
+    cursor: pointer;
+}
+
+.content-wrapper .menu-wrapper .menu-columns .side-items-menu-wrapper {
+    flex-basis: 1;
+    cursor: pointer;
+}
+
+.menu-item {
+    text-align: center;
+    padding: 5px 10px;
+    transition: .2s;
+}
+
+.menu-item:focus, .menu-item:hover {
+    background: #eabc7675;
+}
+
+.menu-item-button {
+    all: unset;
+}
+
+#welcome-to-waffleplace {
+    margin-top: 20px;
+    font-size: 2em;
+    color: white;
+}
+
+#updater {
+    font-size: 1rem;
+    float: right;
+    padding: 5px;
+}
+
+#updater:hover {
+    filter: invert(1);
+}
+
+.total-wrapper {
+    font-size: .5em;
+    padding-left: 20px;
+}
+
+#total {
+    text-align: center;
+}
+
+#subtext {
+    color: white;
+}

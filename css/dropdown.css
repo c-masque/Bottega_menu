@@ -1,0 +1,66 @@
+/* I stole the functionality of this button from W3 because I needed to work on other things rather than hyperfixate on this rn */
+
+.heading-btn-wrapper .dropdown-button-wrapper {
+  margin-right: 20px;
+}
+
+.heading-dropdown {
+  margin-right: 20px;
+}
+
+.dropbtn {
+  color: #c3603a;
+    background-color: #e0ba67;
+    padding: 10px;
+    font-family: Candara, sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+    border: unset;
+    border-radius: 10px;
+    transition: .2s;
+    box-shadow: 2px 4px 14px 3px #682605;
+    cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover {
+  background-color: #c3603a;
+    color: #e0ba67;
+    box-shadow: 2px 4px 9px 7px #682605;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.heading .menu-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 20%);
+  z-index: 1;
+  margin: 10px;
+  font-size: 1.5em;
+  place-content: center;
+  width: 180px;
+  text-align: center;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: #c3603a;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.24);
+  font-family: Candara, sans-serif;
+  justify-content: center;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: rgba(230, 167, 73, 0.24);}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}

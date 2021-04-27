@@ -1,0 +1,14 @@
+.hero-section {
+    max-height: 500px;
+    max-width: 100vw;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #332f2f;
+}
+
+.hero-section img {
+    width: 60vw;
+    margin-top: -60px;
+}

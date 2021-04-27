@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Time</title>
+
+    <!-- Style sheets -->
+    <link rel="stylesheet" type="text/css" href="css\common.css">
+    <link rel="stylesheet" type="text/css" href="css\heading-wrapper.css">
+    <link rel="stylesheet" type="text/css" href="css\dropdown.css">
+    <link rel="stylesheet" type="text/css" href="css\hero.css">
+    <link rel="stylesheet" type="text/css" href="css\menu-wrapper.css">
+
+</head>
+
+<body onload="accessMenu('breakfast')">
+    <div class="container">
+
+        <div class="heading-wrapper">
+            <div class="logo-wrapper">
+                <img src="img\waffleplacelogo.png" alt="logo">
+            </div>
+            <div class="heading-title">
+                <div id="site-title">A Place To Waffle About Your Next Taste</div>
+            </div>
+
+            <div class="heading-btn-wrapper">
+
+                <div class="dropdown-button-wrapper">
+                    <button onclick="droppy()" class="dropbtn">
+                        Menu Selection
+                    </button>
+                    
+                    <div id="menu-dropdown" class="dropdown-content">
+                      <a href="#">Breakfast</a>
+                      <a href="#">Dinner</a>
+                    </div>
+                </div>
+
+                <div class="button-wrapper">
+                    <div class="heading-btn">
+                        <button type="button" class="menu-button">Home</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-section">
+            <button onclick="updatePhoto()">
+                <img src="img\waitress.jpg" id="waitress" alt="waitress-taking-orders-from-people-restaurant_23-2148006737">
+            </button>
+        </div>
+
+        <div class="content-wrapper">
+
+            <p id="welcome-to-waffleplace">Hello, welcome to WafflePlace! Here is our breakfast menu.</p>
+            <p id="subtext"> I am craving the twin egg special...</p>
+
+            <div class="menu-wrapper">
+
+                <div class="menu-header">
+                    <div class="menu-display">
+                        Breakfast Menu
+                        <button id="updater" onclick="updateHello()">🤡</button>
+                    </div>
+                    <div class="total-wrapper">
+                        <div class="total-view">
+                            Total: <div id="total">$0</div>
+                    </div>
+                    </div>
+                </div>
+
+                <div class="menu-columns">
+                    <div class="main-items-menu-wrapper">
+                        <div class="menu-item">
+                            <button id="1" onclick="accessMenu(1)"></button>
+                        </div>
+                        <div class="menu-item">
+                            <button id="2" onclick="accessMenu(2)"></button>
+                        </div>
+                        <div class="menu-item">
+                            <button id="3" onclick="accessMenu(3)"></button>
+                        </div>
+                    </div>
+
+                    <div class="side-items-menu-wrapper">
+                        <div class="menu-item">
+                            <button id="4" onclick="accessMenu(4)"></button>
+                        </div>
+                        <div class="menu-item">
+                            <button id="5" onclick="accessMenu(5)"></button>
+                        </div>
+                        <div class="menu-item">
+                            <button id="6" onclick="accessMenu(6)"></button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+<!--<script src="js\dropdown.js"></script>-->
+<script src="js\menu-items.js"></script>
+
+</body>
+</html>

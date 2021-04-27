@@ -1,0 +1,81 @@
+.menu-button {
+    color: #c3603a;
+    background-color: rgb(222 158 62);
+    padding: 10px;
+    font-family: Candara, sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+    border: unset;
+    border-radius: 10px;
+    transition: .2s;
+    box-shadow: 2px 4px 14px 3px #682605;
+    cursor: pointer;
+}
+
+.menu-button:hover {
+    background-color: #c3603a;
+    color: #e0ba67;
+    box-shadow: 2px 4px 9px 7px #682605;
+}
+
+#site-title {
+    color: #c3603a;
+    font-size: 1.8em;
+    font-family: Candara, sans-serif;
+    text-shadow: 2px 1px 3px #481705;
+    transition: 1s;
+    cursor: pointer;
+    font-style: italic;
+}
+
+#site-title:hover {
+    padding-left: .5rem;
+    color: #8f3e1f;
+}
+
+.container {
+    width: 100vw;
+}
+
+.heading-wrapper {
+    height: 80px;
+    width: 100vw;
+    background-color: rgb(234 188 118);
+    display: flex;
+    align-items: center;
+    padding-left: 1.5em;
+    position: relative;
+    z-index: 10;
+    box-shadow: 0px 6px 20px 6px #1d0e0b;
+}
+
+.heading-wrapper .logo-wrapper {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+}
+
+.heading-wrapper .logo-wrapper img {
+    height: 4rem;
+}
+
+.heading-wrapper .heading-title {
+    padding-left: 1.5em;
+    display: flex;
+    width: 80%;
+}
+
+.heading-wrapper .heading-title img {
+    height: 1.5em;
+    padding: 5px;
+    padding-left: 10px;
+    filter: sepia(1);
+    opacity: 80%;
+}
+
+.heading-btn-wrapper {
+    margin-right: 5rem;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
